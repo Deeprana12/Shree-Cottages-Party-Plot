@@ -1,7 +1,7 @@
 ﻿# Shree-Cottages-Party-plot
 This website is fully build with HTML,CSS,Javascript,PHP,AJAX,Mysql.
 
-This is only glimps of the website there are more sections like galleries,about us,services.
+This is only the glimps of the website there are more sections like galleries,about us,services etc.
 
 ------This is a front-end part-------
 
