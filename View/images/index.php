@@ -1,6 +1,7 @@
 <?php
-session_start();
-error_reporting(0);
+include('../../config/config.php');
+$sql = "SELECT * FROM tbl_shreeimages";
+$res = mysqli_query($conn,$sql);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +20,7 @@ error_reporting(0);
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Mulish:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
 </head>
@@ -30,17 +32,16 @@ error_reporting(0);
     <div class="gallery">    
         <h1>Gallery</h1>
         <div class="gfb">
-            <!-- <a href="images/f1.jpg" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f1.jpg" ></a>
-            <a href="images/f2.jpg" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f2.jpg" ></a>
-            <a href="images/f3 (1).jpg" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f3 (1).jpg"></a>
-            <a href="images/f3 (3).jpg" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f3 (3).jpg"></a>
-            <a href="images/f3 (6).jpg" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f3 (6).jpg"></a>
-            <a href="images/f3 (7).jpg" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f3 (7).jpg"></a>
-            <a href="images/f3 (9).jpg" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f3 (9).jpg"></a>
-            <a href="images/f3 (10).jpg" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f3 (10).jpg"></a>            
-            <a href="images/f3 (12).JPG" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f3 (12).jpg"></a>
-            <a href="images/f5.jpg" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f5.jpg"></a>
-            <a href="images/f6.jpg" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f6.jpg"></a>     -->
+        <?php $output=""; 
+            if (mysqli_num_rows($res) > 0) {
+                // output data of each row
+                while($row = mysqli_fetch_assoc($res)) {                                               
+                    $output .="                                                        
+                    <a href='../../../shree-admin/Asserts/images/{$row['image']}' data-lightbox='mygallery' 
+                    data-aos='fade-up'><img src='../../../shree-admin/Asserts/images/{$row['image']}' ></a>";
+                }
+                echo $output;
+            } ?>             
         </div>
     </div>
     <!-- ------------ -->    

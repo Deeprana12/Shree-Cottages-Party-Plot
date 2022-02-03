@@ -1,36 +1,27 @@
 <?php
-session_start();
-error_reporting(0);
-include('../config/config.php');
-if(isset($_POST['send']))
-{
-$firstname=$_POST['firstname'];
-$lastname=$_POST['lastname'];
-$email=$_POST['email'];
-$phonenumber=$_POST['phonenumber'];
-$message=$_POST['message'];
-$sql="INSERT INTO tblcontactusquery(Firstname,Lastname,Emailid,Phonenumber,Message) VALUES ('$firstname','$lastname','$email','$phonenumber','$message')";
-$query = $dbh->prepare($sql);
-$query->bindParam(':firstname',$firstname,PDO::PARAM_STR);
-$query->bindParam(':lastname',$lastname,PDO::PARAM_STR);
-$query->bindParam(':email',$email,PDO::PARAM_STR);
-$query->bindParam(':phonenumber',$phonenumber,PDO::PARAM_STR);
-$query->bindParam(':message',$message,PDO::PARAM_STR);
-$query->execute();
-$lastInsertId = $dbh->lastInsertId();
-if($lastInsertId)
-{
-$msg="Query Sent. We will contact you shortly";
-}
-else 
-{
-$error="Something went wrong. Please try again";
+
+include('../../config/config.php');
+
+if(isset($_POST['send'])){
+
+    $firstname=$_POST['firstname'];
+    $lastname=$_POST['lastname'];
+    $email=$_POST['email'];
+    $phonenumber=$_POST['phonenumber'];
+    $message=$_POST['message'];
+    $sql="INSERT INTO tbl_contactusquery(firstname,lastname,email,ph_no,msg,posting_date) VALUES ('$firstname','$lastname','$email','$phonenumber','$message',NOW())";
+    $res = mysqli_query($conn,$sql);
+    if($res){
+        $msg = "Done";
+    }else{
+        $error = "Error";
+    }
 }
 
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -49,28 +40,10 @@ $error="Something went wrong. Please try again";
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" />
 
     
-    
-<style>
-    
-     .errorWrap {
-    padding: 10px;
-    margin: 0 0 20px 0;
-    background: #fff;
-    border-left: 4px solid #dd3d36;
-    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-    }
-    .succWrap{
-        padding: 10px;
-        margin: 0 0 20px 0;
-        background: #fff;
-        border-left: 4px solid #5cb85c;
-        -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-        box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-    }
- </style>
+
 
 </head>
+
 <body>
     <?php include('../section/header.php');?>
     </div>
@@ -99,10 +72,7 @@ $error="Something went wrong. Please try again";
             </div>
             <div class="contactForm">
                 <h2>Send a message</h2>
-                <form Action="" method="POST">
-                
-                <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
-                 else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
+                <form Action="" method="POST">                                                 
                 <div class="formBox">
                 
                     <div class="inputBox w50">
@@ -139,7 +109,9 @@ $error="Something went wrong. Please try again";
             © Copyright 2021 Shree cottages & party plot. All rights reserved.
         </p>
     </div>     
-    
+    <script>if ( window.history.replaceState ) {
+    window.history.replaceState( null, null, window.location.href );
+    }</script>
 <script src="../../assets/js/jquery.min.js"></script>
 <script src="../../assets/js/slick.min.js"></script> 
 <script src="../../assets/js/j3.js"></script>

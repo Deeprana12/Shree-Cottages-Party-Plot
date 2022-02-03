@@ -2,15 +2,16 @@
 
 /*about*/
 .mi{
+  
   background-color: whitesmoke; 
   z-index: 2; 
-  font-size: 2rem;  
+  font-size: 4rem;  
   padding: 3rem;
 }
    
 .mrinfo{    
-  padding-left:10rem;
-  padding-right:10rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
   padding-top:2rem;
   padding-bottom:2rem;
   height: auto; 
