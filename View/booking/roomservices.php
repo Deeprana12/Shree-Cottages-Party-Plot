@@ -16,13 +16,11 @@ function showA() {
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   
 
     <title>Booking Form</title>
 
-    <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-
+  
     <!-- Bootstrap -->
     <link type="text/css" rel="stylesheet" href="bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="style.css" />
@@ -51,22 +49,6 @@ function showA() {
         href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Mulish:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap"
         rel="stylesheet">
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
-    <meta name="theme-color" content="#7952b3">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-
 
     <style>
     .bd-placeholder-img {
@@ -85,7 +67,6 @@ function showA() {
     </style>
     <link href="pricing.css" rel="stylesheet">
 </head>
-<?php include('../section/header.php');?>
 
 <body data-new-gr-c-s-check-loaded="14.1007.0" data-gr-ext-installed="">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -189,9 +170,9 @@ function showA() {
                             <h1>Book a plot</h1>
                         </div>
 
-                        <form action="payscript.php" method="POST">
+                        <form action="" method="POST">
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col-sm-15">
                                     <div class="form-group">
                                         <span class="form-label">Name</span>
                                         <input class="form-control" name="Name" placeholder="Enter your name">
@@ -279,6 +260,5 @@ function showA() {
     <script src="../../assets/js/slick.min.js"></script>
     <script src="../../assets/js/j3.js"></script>
 </body>
-<?php include('../section/footer.php');?>
 
 </html>

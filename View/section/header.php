@@ -1,4 +1,3 @@
-
 <div class="containerx">
 
     <div class="hamburger-menu">
@@ -11,7 +10,8 @@
         <div class="img-wrapper">
             <div class="banner">
                 <a href="index.php">
-                    <h4 data-aos="fade-up">Shree Cottages & Party Plot</h4>
+                    <img style="display: inline; margin-top: -5rem; margin-left: -3rem;" src="../../assets/images/logo.png" alt="logo" width="90" height="100" />
+                    <h4 style="display: inline;">Shree Cottages & Party Plot</h4>
                 </a>
             </div>
         </div>

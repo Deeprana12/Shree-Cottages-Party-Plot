@@ -19,10 +19,11 @@
   .header{    
     width: 100%;
     height: 150vh;
-    position: relative;
-    perspective: 100rem;    
+    position: fixed;
+    perspective: 100rem;   
+    background: #04080c; 
   }
-  
+ 
   @media(max-width:1272px){
     .header{
         width: auto;
@@ -57,18 +58,23 @@
   }
   
   .banner{
-    position: absolute;
+    position: fixed;
     top: 4%;
     left: 4%;        
   }
-  
+  .banner img{
+    float: left;
+    top: 5rem; 
+    background: #555;
+  }
   .banner h4{
     font-family: 'Baloo Da 2',serif;
     font-size: 7rem;
     font-weight: 300;        
     font-weight: 500;
     line-height: 7rem;
-    letter-spacing: .2rem;    
+    letter-spacing: .2rem;   
+    background-color: #04080c; 
     text-shadow: 0 0.3rem 0.5rem rgb(0,0,0,0.4);
     opacity: 1;    
   }
