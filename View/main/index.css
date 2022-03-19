@@ -17,7 +17,7 @@
     content: "";
     top: 0;
     left: 0;
-    background: url(images/services.jpg) no-repeat;
+    background: url(../../assets/images/services.jpg) no-repeat;
     z-index: -1;
     background-size: cover;  
     opacity: 0.2;  
@@ -214,6 +214,6 @@
   .map{
     height: 45rem;
     width: 100%;
-    background: url(images/IMG-20170911-WA0029.jpg);
+    background: url(../../assets/images/IMG-20170911-WA0029.jpg);
   }
   
