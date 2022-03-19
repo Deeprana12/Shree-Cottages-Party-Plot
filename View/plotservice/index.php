@@ -5,6 +5,7 @@ error_reporting(0);
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,9 +15,12 @@ error_reporting(0);
     <script src="lightbox-plus-jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Mulish:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Mulish:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- <link rel="stylesheet" href="response.css" media="screen and (max-width:1170px)"> -->
@@ -29,67 +33,84 @@ error_reporting(0);
 </head>
 <?php include('../section/header.php');?>
 <body>
-    
+
     <main>
 
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Party Plot service</h1>
-        <p class="lead text-muted">
-            Shree Party Plot is a place where time transforms into treasure and adds magic to every moment by making the events of life memorable and enriching. It is known for making all the difference with unmatched ambiance and fascinating luxuries at one place. It is an experience that will transcend and blend with your world and imagination- making it reality!            
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Party Plot service</h1>
+                    <p class="lead text-muted">
+                        Shree Party Plot is a place where time transforms into treasure and adds magic to every moment
+                        by making the events of life memorable and enriching. It is known for making all the difference
+                        with unmatched ambiance and fascinating luxuries at one place. It is an experience that will
+                        transcend and blend with your world and imagination- making it reality!
 
-        </p>
-        <p>
-          <a href="roomservices.php" class="btn btn-primary my-2">Book Now</a>          
-        </p>
-      </div>
-    </div>
-  </section>
+                    </p>
+                    <p>
+                        <a href="roomservices.php" class="btn btn-primary my-2">Book Now</a>
+                    </p>
+                </div>
+            </div>
+        </section>
 
-  <div class="gallery">    
-    <h1>Party plot Gallery</h1>
-    <div class="gfb">
-        <a href="images/f1.jpg" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f1.jpg" ></a>
-        <a href="images/f2.jpg" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f2.jpg" ></a>
-        <a href="images/f3 (1).jpg" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f3 (1).jpg"></a>
-        <a href="images/f3 (3).jpg" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f3 (3).jpg"></a>
-        <a href="images/f3 (6).jpg" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f3 (6).jpg"></a>
-        <a href="images/f3 (7).jpg" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f3 (7).jpg"></a>
-        <a href="images/f3 (9).jpg" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f3 (9).jpg"></a>
-        <a href="images/f3 (10).jpg" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f3 (10).jpg"></a>
-        <a href="images/f3 (11).JPG" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f3 (11).jpg"></a>
-        <a href="images/f3 (12).JPG" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f3 (12).jpg"></a>
-        <a href="images/f5.jpg" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f5.jpg"></a>
-        <a href="images/f6.jpg" data-lightbox="mygallery" data-aos="fade-up"><img src="images/f6.jpg"></a>    
-    </div>
-</div>
-<script>
-            document.querySelector(".hamburger-menu").addEventListener("click",()=>{
-        document.querySelector(".containerx").classList.toggle('change');
-    });
+        <div class="gallery">
+            <h1>Party plot Gallery</h1>
+            <div class="gfb">
+                <a href="../../assets/images/f1.jpg" data-lightbox="mygallery" data-aos="fade-up"><img
+                        src="../../assets/images/f1.jpg"></a>
+                <a href="../../assets/images/f2.jpg" data-lightbox="mygallery" data-aos="fade-up"><img
+                        src="../../assets/images/f2.jpg"></a>
+                <a href="../../assets/images/f3 (1).jpg" data-lightbox="mygallery" data-aos="fade-up"><img
+                        src="../../assets/images/f3 (1).jpg"></a>
+                <a href="../../assets/images/f3 (3).jpg" data-lightbox="mygallery" data-aos="fade-up"><img
+                        src="../../assets/images/f3 (3).jpg"></a>
+                <a href="../../assets/images/f3 (6).jpg" data-lightbox="mygallery" data-aos="fade-up"><img
+                        src="../../assets/images/f3 (6).jpg"></a>
+                <a href="../../assets/images/f3 (7).jpg" data-lightbox="mygallery" data-aos="fade-up"><img
+                        src="../../assets/images/f3 (7).jpg"></a>
+                <a href="../../assets/images/f3 (9).jpg" data-lightbox="mygallery" data-aos="fade-up"><img
+                        src="../../assets/images/f3 (9).jpg"></a>
+                <a href="../../assets/images/f3 (10).jpg" data-lightbox="mygallery" data-aos="fade-up"><img
+                        src="../../assets/images/f3 (10).jpg"></a>
+                <a href="../../assets/images/f3 (11).JPG" data-lightbox="mygallery" data-aos="fade-up"><img
+                        src="../../assets/images/f3 (11).jpg"></a>
+                <a href="../../assets/images/f3 (12).JPG" data-lightbox="mygallery" data-aos="fade-up"><img
+                        src="../../assets/images/f3 (12).jpg"></a>
+                <a href="../../assets/images/f5.jpg" data-lightbox="mygallery" data-aos="fade-up"><img
+                        src="../../assets/images/f5.jpg"></a>
+                <a href="../../assets/images/f6.jpg" data-lightbox="mygallery" data-aos="fade-up"><img
+                        src="../../assets/images/f6.jpg"></a>
+            </div>
+        </div>
+        <script>
+        document.querySelector(".hamburger-menu").addEventListener("click", () => {
+            document.querySelector(".containerx").classList.toggle('change');
+        });
 
-    const dropdownItems = document.querySelectorAll('.dropdown-hover')
+        const dropdownItems = document.querySelectorAll('.dropdown-hover')
 
-    dropdownItems.forEach(dropdownItems=>{
-        dropdownItems.addEventListener('mouseover',()=>{
-            dropdownItems.lastElementChild.style.cssText='opacity:1;visibility:visible' 
+        dropdownItems.forEach(dropdownItems => {
+            dropdownItems.addEventListener('mouseover', () => {
+                dropdownItems.lastElementChild.style.cssText = 'opacity:1;visibility:visible'
+            })
+            dropdownItems.addEventListener('mouseout', () => {
+                dropdownItems.lastElementChild.style.cssText = 'opacity:0;visibility:hidden'
+            })
         })
-        dropdownItems.addEventListener('mouseout',()=>{
-            dropdownItems.lastElementChild.style.cssText='opacity:0;visibility:hidden' 
-        })
-    })
-    </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init(
-            {duration:1000}
-        );
-    </script>
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init({
+            duration: 1000
+        });
+        </script>
 
-</main>
+    </main>
 
-
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/slick.min.js"></script>
+    <script src="../../assets/js/j3.js"></script>
 </body>
 <?php include('../section/footer.php');?>
 </html
