@@ -1,4 +1,8 @@
-<?php include('../../config/config.php'); ?>
+<?php
+include('../../config/config.php');
+$sql = "SELECT * FROM tbl_shreeimages";
+$res = mysqli_query($conn,$sql);
+?><?php include('../../config/config.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,40 +45,44 @@
                         event duration & will not availible after event is over. The price is 5000&#x20B9(can be differ)
                         for 24hours.
                     </p>
-                    <p>
+                    <!-- <p>
                         <a href="roomservices.php" class="btn btn-primary my-2">Book Now</a>
+                    </p> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Party plot service</h1>
+                    <p class="lead text-muted">
+                        Shree Party Plot is a place where time transforms into treasure and adds magic to every moment
+                        by making the events of life memorable and enriching. It is known for making all the difference
+                        with unmatched ambiance and fascinating luxuries at one place. It is an experience that will
+                        transcend and blend with your world and imagination- making it reality!
+
                     </p>
+                    <!-- <p>
+                        <a href="roomservices.php" class="btn btn-primary my-2">Book Now</a>
+                    </p> -->
                 </div>
             </div>
         </section>
 
         <div class="gallery">
-            <h1>Room Gallery</h1>
+            <h1>Gallery</h1>
             <div class="gfb">
-                <a href="../../assets/images/f1.jpg" data-lightbox="mygallery" data-aos="fade-up"><img
-                        src="../../assets/images/f1.jpg"></a>
-                <a href="../../assets/images/f2.jpg" data-lightbox="mygallery" data-aos="fade-up"><img
-                        src="../../assets/images/f2.jpg"></a>
-                <a href="../../assets/images/f3 (1).jpg" data-lightbox="mygallery" data-aos="fade-up"><img
-                        src="../../assets/images/f3 (1).jpg"></a>
-                <a href="../../assets/images/f3 (3).jpg" data-lightbox="mygallery" data-aos="fade-up"><img
-                        src="../../assets/images/f3 (3).jpg"></a>
-                <a href="../../assets/images/f3 (6).jpg" data-lightbox="mygallery" data-aos="fade-up"><img
-                        src="../../assets/images/f3 (6).jpg"></a>
-                <a href="../../assets/images/f3 (7).jpg" data-lightbox="mygallery" data-aos="fade-up"><img
-                        src="../../assets/images/f3 (7).jpg"></a>
-                <a href="../../assets/images/f3 (9).jpg" data-lightbox="mygallery" data-aos="fade-up"><img
-                        src="../../assets/images/f3 (9).jpg"></a>
-                <a href="../../assets/images/f3 (10).jpg" data-lightbox="mygallery" data-aos="fade-up"><img
-                        src="../../assets/images/f3 (10).jpg"></a>
-                <a href="../../assets/images/f3 (11).JPG" data-lightbox="mygallery" data-aos="fade-up"><img
-                        src="../../assets/images/f3 (11).jpg"></a>
-                <a href="../../assets/images/f3 (12).JPG" data-lightbox="mygallery" data-aos="fade-up"><img
-                        src="../../assets/images/f3 (12).jpg"></a>
-                <a href="../../assets/images/f5.jpg" data-lightbox="mygallery" data-aos="fade-up"><img
-                        src="../../assets/images/f5.jpg"></a>
-                <a href="../../assets/images/f6.jpg" data-lightbox="mygallery" data-aos="fade-up"><img
-                        src="../../assets/images/f6.jpg"></a>
+            <?php $output=""; 
+                if (mysqli_num_rows($res) > 0) {
+                    // output data of each row
+                    while($row = mysqli_fetch_assoc($res)) {                                               
+                        $output .="                                                        
+                        <a href='../../../shree-admin/Asserts/images/{$row['image']}' data-lightbox='mygallery' 
+                        data-aos='fade-up'><img src='../../../shree-admin/Asserts/images/{$row['image']}' ></a>";
+                    }
+                    echo $output;
+                } ?>             
             </div>
         </div>
         <script>

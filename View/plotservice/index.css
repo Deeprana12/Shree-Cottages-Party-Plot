@@ -1,9 +1,16 @@
-@import url(../section/header+footer.css);  
+@import url(../section/header+footer.css); 
 
-    /* main{            
-    } */
+*{
+    font-size : 62.5%;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;     
+  }
 
-    .gallery h1{    
+.gallery h1{    
     display: block;
     text-align: center;        
 }
@@ -47,13 +54,13 @@
     }
 }
 .container h1{
-      font-size:5rem;
-    }
+    font-size:5rem;
+}
 
-    .container p{
-      font-size:3rem;
-    }
+.container p{
+font-size:3rem;
+}
 
-    .container .btn{
-      font-size:3rem;
-    }
+.container .btn{
+font-size:3rem;
+}

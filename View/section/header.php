@@ -39,7 +39,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="menu-item dropdown-hover">
+            <!-- <li class="menu-item dropdown-hover">
                 <a href="#" class="menu-link" data-content="Services"> Services <i class="fas fa-chevron-down arrow">
                     </i></a>
                 <ul class="nav-dropdown">
@@ -50,6 +50,9 @@
                         <a href="../plotservice/index.php" class="nav-dropdown-link1">Plot Services</a>
                     </li>
                 </ul>
+            </li> -->
+            <li class="menu-item">
+                <a href="../roomservice/index.php" class="menu-link" data-content="Room service"> Services </a>
             </li>
             <li class="menu-item">
                 <a href="../contact/index.php" class="menu-link" data-content="Contact Us"> Contact Us </a>

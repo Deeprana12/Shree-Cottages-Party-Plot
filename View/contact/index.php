@@ -74,12 +74,37 @@ if(isset($_POST['send'])){
                 <h2>Send a message</h2>
                 <form Action="" method="POST">                                                 
                 <div class="formBox">
-                
-                    <div class="inputBox w50">
-                        <input type="text" class="input" id=" first_name" name="firstname" required="required">
-                        <span>First Name</span>
+
+                        <div class="inputBox w50">
+                            <input type="text" class="input" id=" first_name" name="firstname" required="required">
+                            <span>First Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" class="input" id="last_name" name="lastname" required="required">
+                            <span>Last Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="email" class="input" id="email" name="email" required="required">
+                            <span>Email Address</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" class="input" id="phone_number" name="phonenumber" required="required">
+                            <span>Phone Number</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <textarea name="message" class="input" id="message" required="required"></textarea>
+                            <span>Write your message here....</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <input type="submit" class="input" name="send" value="submit">
+                        </div>
+
                     </div>
-                </form>
+
+                </div> 
+                </form>     
+
+                
             </div>
         </div>
     </section>

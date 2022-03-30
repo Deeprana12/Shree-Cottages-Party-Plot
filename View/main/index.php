@@ -65,7 +65,7 @@ error_reporting(0);
 
     <div class="bookevent">
         <h2>Want to celebrate your best day at best place !!</h2>
-        <a href="View/booking/roomservices.php" class="btn" data-aos="fade-up"
+        <a href="#" class="btn" data-aos="fade-up"
             style="font-family: 'Yesteryear', cursive;font-size:2.5rem">Book Your Event</a>
         <div class="pics">
             <div class="block" data-aos="fade-up">
