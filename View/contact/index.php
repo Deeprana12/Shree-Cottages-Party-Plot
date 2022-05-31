@@ -40,14 +40,14 @@ if(isset($_POST['send'])){
 
     <!-- Glidejs StyleSheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" />
-
+    <?php include('../section/includes.php'); ?>
 
 </head>
 
 <body>
     <?php include('../section/header.php');?>
     </div>
-    <section>
+    <section class="conct">
         <div class="container">
             <div class="contactinfo">
                 <div>
@@ -55,17 +55,17 @@ if(isset($_POST['send'])){
                     <ul class="info">
                         <li>
                             <span><img src="../../assets/contactus/location.png"></span>
-                            <span>Veraval Road,Opp.Navjivan School<br>
+                            <span><p>Veraval Road,Opp.Navjivan School<br>
                                 Talala-Gir<br>
-                                Dist:Gir Somanath.</span>
+                                Dist:Gir Somanath.</p></span>
                         </li>
                         <li>
                             <span><img src="../../assets/contactus/mail.png"></span>
-                            <span>kishanpatel3721@gmail.com</span>
+                            <span><p>kishanpatel3721@gmail.com</p></span>
                         </li>
                         <li>
                             <span><img src="../../assets/contactus/call.png"></span>
-                            <span> 9427424157</span>
+                            <span> <p>9427424157</p></span>
                         </li>
                     </ul>
                 </div>

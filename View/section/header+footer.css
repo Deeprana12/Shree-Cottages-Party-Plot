@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
 
 *{
   font-size : 62.5%;
@@ -59,23 +59,49 @@
 
 .banner{
   position: absolute;
+  background-color: transparent;
   top: 4%;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 8px;  
   left: 4%;        
 }
 
 .banner h4{
-  font-family: 'Baloo Da 2',serif;
+  font-family: 'Great Vibes', cursive;
   font-size: 7rem;
-  font-weight: 300;        
-  font-weight: 500;
+  font-weight: 400;        
+  font-weight: 550;
   line-height: 7rem;
+  color: #000;
   letter-spacing: .2rem;    
   text-shadow: 0 0.3rem 0.5rem rgb(0,0,0,0.4);
   opacity: 1;    
 }
-@media (max-width:310px) {
+
+.banner img{
+  height: 65px;
+  width: 70px;
+}
+
+@media (max-width:1095px) {
+  .banner{
+    margin-right: 90px;
+  }
+}
+
+@media (max-width:500px) {
   .banner h4{
-    font-size: 5rem;
+    font-size: 4rem;
+    padding:15px;
+    line-height: 4rem;
+  letter-spacing: 0rem;  
+  }
+  .banner img{
+    height: 50px;
+    width: 60px;
+    padding:2px;
+    margin:-16px;
   }
 }
 
@@ -115,15 +141,23 @@
   height: auto;
   font-size: 2.5rem;
   width: 15.4rem;
-  background: linear-gradient(to top right, #D7E1EC 0%, #FFFFFF 100%);
+  background: #FFE69A;  
   text-rendering: initial;    
   position: absolute;     
   z-index: 100;
   opacity: 0;
   visibility: hidden;
-  border: 0.1rem black;
+  border: 1rem black;
   border-radius: 0.5rem;
   transition: 0.5s;
+}
+
+.menu ul{
+  border: 1rem black;
+  padding: 0px;
+}
+.sidebar a{
+  text-decoration: none;
 }
 
 .nav-dropdown-link1{      
@@ -170,15 +204,43 @@
   position: fixed;
   top: 0;
   right: -40rem;
-  background-color: transparent;
+  background-color: #FFE69A;
   transition: right 0.5s;
 
   box-shadow: 2rem 2rem 5rem rgba(0,0,0,0.5);
   border-top: 0.1rem solid rgba(255,255,255,0.5);
   border-left: 0.1rem solid rgba(255,255,255,0.5);
-  background: linear-gradient(to top right, #D7E1EC 0%, #FFFFFF 100%);
+  /* background: linear-gradient(to top right, #D7E1EC 0%, #FFFFFF 100%); */
   border-bottom-left-radius: 2.5rem;
   border-top-left-radius: 2.5rem;
+}
+
+.nav-dropdown li{
+  margin: 5px;
+}
+
+@media screen and (max-width:465px) {
+  .sidebar{
+  z-index: 100000000;
+  width: 28rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -40rem;  
+  transition: right 0.5s;
+
+  box-shadow: 2rem 2rem 5rem rgba(0,0,0,0.5);
+  border-top: 0.1rem solid rgba(255,255,255,0.5);
+  border-left: 0.1rem solid rgba(255,255,255,0.5);
+  /* background: linear-gradient(to top right, #D7E1EC 0%, #FFFFFF 100%); */
+  border-bottom-left-radius: 2.5rem;
+  border-top-left-radius: 2.5rem;
+}
+.nav-dropdown{
+  border: 1rem black;
+}
+
+
 }
 
 .change .sidebar{
@@ -356,11 +418,20 @@ ul{
   list-style: none;
 }
 .footer{
-  background-color: #24262b;
+    background-color: #24262b;
     padding-left: 70px;
     padding-right: 70px;
     padding-top: 70px;
     padding-bottom:0px;    
+}
+@media screen and (max-width:465px) {
+  .footer{
+    background-color: #24262b;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom:0px;    
+}
 }
 .footer-col{
     width: 25%;
@@ -413,6 +484,12 @@ ul{
   color: #ffffff;
   transition: all 0.5s ease;
 }
+
+.footer-col .social-links i{
+  font-size:24px;
+  padding-top: 10px;
+}
+
 .footer-col .social-links a:hover{
   color: #24262b;
   background-color: #ffffff;

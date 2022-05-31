@@ -33,7 +33,7 @@ error_reporting(0);
 
     <!-- Glidejs StyleSheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" />
-
+    <?php include('../section/includes.php'); ?>
     <title>shree cottages | Page details</title>
 </head>
 
@@ -43,7 +43,7 @@ error_reporting(0);
 
     <!-- Meta Section -->
 
-    <div class="cc" data-aos="zoom-in">
+    <!-- <div class="cc" data-aos="zoom-in">
 
         <h1>Shree Party Plot & Banquet Hall - Many Celebrations… One Destination
             The finest celebration venue in the city</h1>
@@ -54,35 +54,37 @@ error_reporting(0);
         <p>Marriages they say are made in heaven. That's why, we do everything we can to make your special day truly
             heavenly for you and your loved ones. It’s certainly the perfect wedding destination.</p>
 
-    </div>
+    </div>   -->
     </div>
     <!-- ------------>
-
     <section class="mi">
-
+        
         <div class="mrinfo" data-aos="zoom-in">
+            <div class="about-heading">
+                <h2>About Us</h2>    
+            </div>
 
-            <p>-Shree cottages and Party Plot has all the elements - unique and inspiring decor, ideal location,
+            <p>Shree cottages and Party Plot has all the elements  unique and inspiring decor, ideal location,
                 incredible Vegetarian ONLY Gujarati cuisine, excellent staff – to execute flawless functions and grand
                 gatherings. We have perfect blend of experience and creativity to make your occasion a special success.
                 Every detail of your need is in priority consideration while making arrangements for your occasion
                 without any sort of compromise on quality or exclusivity.
             </p><br>
-            <p>-Located in the Talala city, Junagadh, Shree cottages and Party plot is one if the finest venues in the
+            <p>Located in the Talala city, Junagadh, Shree cottages and Party plot is one if the finest venues in the
                 city.
                 It is indeed a Perfect choice for weddings, receptions, banquets, corporate events and birthdays, Shree
                 cottages and party plot has been the venue for the most exquisite weddings and gala celebrations in the
                 city.</p><br>
 
-            <p>-Being located in the prime area of Junagadh, it promises an exclusive and unforgettable experience. Our
+            <p>Being located in the prime area of Junagadh, it promises an exclusive and unforgettable experience. Our
                 plot redefines extravagance with ready infrastructure, hospitality, space, ambience and above all value
                 for money.</p><br>
 
-            <p>-Being a trusted name in the market, we are proud of having a well maintained party plot with the lawn
+            <p>Being a trusted name in the market, we are proud of having a well maintained party plot with the lawn
                 area of 55000 sq. ft. and a huge parking area combined with a modern and tradition theme or design that
                 looks so much fascinating for receptions, tilak parties, sangeet ceremonies, garba etc.</p><br>
 
-            <p>-Call us now to make your event a memorable and special one for you and your guests!</p><br>
+            <p>Call us now to make your event a memorable and special one for you and your guests!</p><br>
 
         </div>
 

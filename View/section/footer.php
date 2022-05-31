@@ -16,7 +16,7 @@
             <div class="footer-col col-lg-4">
                 <h4>Reach Us</h4>
                 <ul>
-                    <li><i class="fa fa-map-marker fa-lg" style="color:white;size:2rem" aria-hidden="true"></i>
+                    <li><i class="fa fa-map-marker" style="color:#e91e63;font-size:20px" aria-hidden="true"></i>
                         <p style="font-size: 16px;
                   text-transform: capitalize;
                   color: #ffffff;
@@ -29,7 +29,7 @@
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pincode : 362150
                         </p>
                     </li>
-                    <li><i class="fa fa-paper-plane fa-lg" style="color:white;size:2rem" aria-hidden="true"></i>
+                    <li><i class="fa fa-map-marker fa-lg" style="color:#e91e63;font-size:20px" aria-hidden="true"></i>
                         <a style="display: inline;margin-left:0.8rem"
                             href="https://www.google.com/maps/place/Shree+cottage/@21.0483,70.5231245,17z/data=!3m1!4b1!4m8!3m7!1s0x3be2ca27bd28f1d1:0xe609e025f726b7c6!5m2!4m1!1i2!8m2!3d21.0483!4d70.5253132">Locate
                             Us</a>
@@ -71,7 +71,7 @@
             <div class="footer-col col-lg-4">
                 <h4>follow us</h4>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -91,6 +91,10 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
 AOS.init({
-    duration: 1000
-});
+        duration: 1000,
+        easing:'ease',
+        once:true,
+    });
+    </script>
+    <script src="j3.js"></script>
 </script>

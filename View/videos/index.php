@@ -24,7 +24,7 @@ $res = mysqli_query($conn,$sql);
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->    
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Mulish:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
-               
+    <?php include('../section/includes.php'); ?>
     <title>Video Gallery</title>
 </head>
     <?php include('../section/header.php');?>
@@ -36,7 +36,7 @@ $res = mysqli_query($conn,$sql);
                             // output data of each row
                             while($row = mysqli_fetch_assoc($res)) {                                               
                                 $output .="                                                        
-                                <iframe width='500' height='300'
+                                <iframe class='videos' width='500' height='300'
                                 src={$row['video_link']} >
                                 </iframe>";
                             }

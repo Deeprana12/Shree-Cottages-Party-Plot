@@ -8,6 +8,13 @@
     list-style: none;
     text-decoration: none;     
   }
+
+  .header{    
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    perspective: 100rem;    
+  }
   
   .gallery h1{    
     display: block;

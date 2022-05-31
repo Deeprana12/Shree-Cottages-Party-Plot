@@ -10,8 +10,8 @@
         <div class="img-wrapper">
             <div class="banner">
                 <a href="index.php">
-                    <img style="display: inline; margin-top: -5rem; margin-left: -3rem;"
-                        src="../../assets/images/logo.png" alt="logo" width="90" height="100" />
+                    <img style="display: inline; margin-top: -5rem; margin-left: -1rem;"
+                        src="../../assets/images/logo.png" alt="logo" />
                     <h4 style="display: inline; ">Shree Cottages & Party Plot</h4>
                 </a>
             </div>
@@ -34,6 +34,7 @@
                     <li class="nav-dropdown-item">
                         <a href="../images/index.php" class="nav-dropdown-link1">Image gallery</a>
                     </li>
+                    <hr>
                     <li class="nav-dropdown-item">
                         <a href="../videos/index.php" class="nav-dropdown-link1">video gallery</a>
                     </li>

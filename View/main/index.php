@@ -2,6 +2,10 @@
 session_start();
 include('../../config/config.php');
 error_reporting(0);
+$sql = "SELECT * FROM tbl_shreevideos";
+$res = mysqli_query($conn,$sql);
+$sql1 = "SELECT * FROM tbl_shreeimages";
+$res1 = mysqli_query($conn,$sql1);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,10 +35,8 @@ error_reporting(0);
     <link
         href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Mulish:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap"
         rel="stylesheet">
-    <style>
-
-
-    </style>
+                    
+        <?php include('../section/includes.php'); ?>
 </head>
 
 <body>
@@ -65,8 +67,8 @@ error_reporting(0);
 
     <div class="bookevent">
         <h2>Want to celebrate your best day at best place !!</h2>
-        <a href="#" class="btn" data-aos="fade-up"
-            style="font-family: 'Yesteryear', cursive;font-size:2.5rem">Book Your Event</a>
+        <!-- <a href="#" class="btn" data-aos="fade-up"
+            style="font-family: 'Yesteryear', cursive;font-size:2.5rem">Book Your Event</a> -->
         <div class="pics">
             <div class="block" data-aos="fade-up">
                 <img class="pic" src="../../assets/images/crpevnt.jpg" class="responsive" alt="" srcset="" height="27rem" ;
@@ -133,39 +135,41 @@ error_reporting(0);
         <div class="glryflex">
             <div class="pglry">
                 <h4>Photo Gallery</h4>
-                <a href="image.php"><img src="../../assets/images/photog.jpg" alt="" srcset=""></a>
+                
+                <?php $output=""; if (mysqli_num_rows($res1) > 0) {                            
+                    $row = mysqli_fetch_assoc($res1);
+                    $output .="<img class='responsive-img-video' src=../../../shree-admin/Asserts/images/{$row['image']} width='460' height='300' alt='' srcset=''/>";
+                    echo $output;
+                } ?>
+                <a href="../images/index.php">Click here for more...</a>
             </div>
             <div class="vglry">
-                <h4>Video Gallery</h4>
-                <a href="video.php"><video src="../../assets/images/video_1.MOV" controls='controls' autoplay='autoplay'
-                        loop='loop' height='280' width='450'></video></a>
+                <h4>Video Gallery</h4>              
+                <?php $output=""; if (mysqli_num_rows($res) > 0) {                            
+                    $row = mysqli_fetch_assoc($res);
+                        $output .="                                                        
+                        <iframe control='controls' width='460' height='300' src={$row['video_link']} >
+                        </iframe>";
+                    echo $output;
+                } ?> 
+                <a href="../videos/index.php">Click here for more...</a>
             </div>
         </div>
     </div>
 
     <!-- Map Section -->
-
-    <iframe class="map" data-aos="zoom-in"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.609633885867!2d70.52312451493296!3d21.048299985987818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be2ca27bd28f1d1%3A0xe609e025f726b7c6!2sShree%20cottage!5e0!3m2!1sen!2sin!4v1615390605537!5m2!1sen!2sin"
-        width="200" height="1057" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-
+    <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.609828612716!2d70.52531429999999!3d21.0482922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be2ca27bd28f1d1%3A0xe609e025f726b7c6!2sShree%20cottage!5e0!3m2!1sen!2sin!4v1653757676857!5m2!1sen!2sin" width="600" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
     <!-- -------------------- -->
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-    AOS.init({
-        duration: 1000
-    });
-    </script>
-    <script src="j3.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>    
 
     <!--Footer -->
     <?php include('../section/footer.php');?>
-    <script src="../../assets/js/jquery.min.js"></script>
+    <!-- <script src="../../assets/js/jquery.min.js"></script>
     <script src="../../assets/js/slick.min.js"></script>
-    <script src="../../assets/js/j3.js"></script>
+    <script src="../../assets/js/j3.js"></script> -->
 </body>
 
 </html>
