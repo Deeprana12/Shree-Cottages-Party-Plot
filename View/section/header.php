@@ -12,7 +12,7 @@
                 <a href="index.php">
                     <img style="display: inline; margin-top: -5rem; margin-left: -1rem;"
                         src="../../assets/images/logo.png" alt="logo" />
-                    <h4 style="display: inline; ">Shree Cottages & Party Plot</h4>
+                    <h4 style="display: inline;  margin-left: 2rem"> Shree Cottages & Party Plot</h4>
                 </a>
             </div>
         </div>

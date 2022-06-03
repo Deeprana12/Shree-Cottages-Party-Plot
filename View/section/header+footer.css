@@ -50,10 +50,10 @@
       background-image: url(../../assets/images/1.jpg);
   }
   50%{
-      background-image: url(../../assets/images/3.jpg);
+      background-image: url(../../assets/images/image3.jpg);
   }
   100%{
-      background-image: url(../../assets/images/4.jpg);
+      background-image: url(../../assets/images/image1.png);
   } 
 }
 
@@ -68,7 +68,7 @@
 }
 
 .banner h4{
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Calibri', cursive;
   font-size: 7rem;
   font-weight: 400;        
   font-weight: 550;

@@ -44,7 +44,7 @@
                   color: #ffffff;
                   text-decoration: none;
                   font-weight: 300;
-                  color: #bbbbbb;display: inline;margin-left:0.8rem">Phone No. :<br>&nbsp;&nbsp;(M)+91-9825303933</p>
+                  color: #bbbbbb;display: inline;margin-left:0.8rem">Phone No. :<br>&nbsp;&nbsp;(M)+91-9427424157</p>
                     </li>
                     <li>
                         <p style="font-size: 16px;
@@ -52,8 +52,8 @@
                   color: #ffffff;
                   text-decoration: none;
                   font-weight: 300;
-                  color: #bbbbbb;display: inline;margin-left:0.8rem">(O) +91-265-2344499 /
-                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +91-265-2338879
+                  color: #bbbbbb;display: inline;margin-left:0.8rem">(O) +91-2877-299027 /
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
                         </p>
                     </li>
                     <li>
@@ -78,7 +78,7 @@
         </div>
     </div>
     <p style="margin-bottom:0.2rem;color:white;display:block;text-align:center;">
-        © Copyright 2021 Shree cottages & party plot. All rights reserved.
+        © Copyright 2022 Shree cottages & party plot. All rights reserved.
     </p>
 </footer>
 
