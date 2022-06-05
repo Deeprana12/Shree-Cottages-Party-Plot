@@ -12,7 +12,7 @@
                 <a href="index.php">
                     <img style="display: inline; margin-top: -5rem; margin-left: -1rem;"
                         src="../../assets/images/logo.png" alt="logo" />
-                    <h4 style="display: inline; ">Shree Cottages & Party Plot</h4>
+                    <h4 style="display: inline;  margin-left: 2rem"> Shree Cottages & Party Plot</h4>
                 </a>
             </div>
         </div>
@@ -60,9 +60,9 @@
             </li>
         </ul>
         <div class="social-media">
-            <a class="sm" href="#"><i class="fab fa-facebook-f"></i></a>
-            <a class="sm" href="#"><i class="fab fa-instagram"></i></a>
-            <a class="sm" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="sm" href="https://www.facebook.com/Shree-Cottage-Party-Plot-Talala-Gir-409866519379420"><i class="fab fa-facebook-f"></i></a>
+            <a class="sm" href="https://www.instagram.com/shreecottages/?hl=en"><i class="fab fa-instagram"></i></a>
+            <a class="sm" href="https://www.youtube.com/channel/UC_Arq-s8E0hlwkRo0JqU22g"><i class="fab fa-youtube"></i></a>
         </div>
 
     </section>

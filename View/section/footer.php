@@ -6,11 +6,10 @@
                 <h4>Quick links</h4>
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="roomservices.php">Book Now</a></li>
-                    <li><a href="roomservices1.php">Room services</a></li>
-                    <li><a href="roomservices1.php">Plot services</a></li>
-                    <li><a href="image.php">Image Gallery</a></li>
-                    <li><a href="video.php">Video Gallery</a></li>
+                    <li><a href="../about/index.php">About Us</a></li>
+                    <li><a href="../roomservice/index.php">Services</a></li>
+                    <li><a href="../images/index.php">Image Gallery</a></li>
+                    <li><a href="../videos/index.php">Video Gallery</a></li>
                 </ul>
             </div>
             <div class="footer-col col-lg-4">
@@ -45,7 +44,7 @@
                   color: #ffffff;
                   text-decoration: none;
                   font-weight: 300;
-                  color: #bbbbbb;display: inline;margin-left:0.8rem">Phone No. :<br>&nbsp;&nbsp;(M)+91-9825303933</p>
+                  color: #bbbbbb;display: inline;margin-left:0.8rem">Phone No. :<br>&nbsp;&nbsp;(M)+91-9427424157</p>
                     </li>
                     <li>
                         <p style="font-size: 16px;
@@ -53,8 +52,8 @@
                   color: #ffffff;
                   text-decoration: none;
                   font-weight: 300;
-                  color: #bbbbbb;display: inline;margin-left:0.8rem">(O) +91-265-2344499 /
-                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +91-265-2338879
+                  color: #bbbbbb;display: inline;margin-left:0.8rem">(O) +91-2877-299027 /
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
                         </p>
                     </li>
                     <li>
@@ -64,23 +63,22 @@
                   text-decoration: none;
                   font-weight: 300;
                   color: #bbbbbb;display: inline;margin-left:0.8rem;
-                  @media(max-width(387px){font-size:5vw}">Email Add.: <br> &nbsp;&nbsp;aminpartyplot@yahoo.in</p>
+                  @media(max-width(387px){font-size:5vw}">Email Add.: <br> &nbsp;&nbsp;shreecottages57@gmail.com</p>
                     </li>
                 </ul>
             </div>
             <div class="footer-col col-lg-4">
                 <h4>follow us</h4>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/Shree-Cottage-Party-Plot-Talala-Gir-409866519379420"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/shreecottages/?hl=en"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UC_Arq-s8E0hlwkRo0JqU22g"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>
     </div>
     <p style="margin-bottom:0.2rem;color:white;display:block;text-align:center;">
-        © Copyright 2021 Shree cottages & party plot. All rights reserved.
+        © Copyright 2022 Shree cottages & party plot. All rights reserved.
     </p>
 </footer>
 
