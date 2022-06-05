@@ -1,6 +1,6 @@
 <?php
 
-include('../../config/config.php');
+include('config/config.php');
 
 if(isset($_POST['send'])){
 
@@ -28,7 +28,7 @@ if(isset($_POST['send'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <link
         href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Mulish:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap"
@@ -40,12 +40,12 @@ if(isset($_POST['send'])){
 
     <!-- Glidejs StyleSheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" />
-    <?php include('../section/includes.php'); ?>
+    <?php include('includes.php'); ?>
 
 </head>
 
 <body>
-    <?php include('../section/header.php');?>
+    <?php include('header.php');?>
     </div>
     <section class="conct">
         <div class="container">
@@ -54,17 +54,17 @@ if(isset($_POST['send'])){
                     <h2>Contact Info</h2>
                     <ul class="info">
                         <li>
-                            <span><img src="../../assets/contactus/location.png"></span>
+                            <span><img src="assets/contactus/location.png"></span>
                             <span><p>Veraval Road,Opp.Navjivan School<br>
                                 Talala-Gir<br>
                                 Dist:Gir Somanath.</p></span>
                         </li>
                         <li>
-                            <span><img src="../../assets/contactus/mail.png"></span>
-                            <span><p>kishanpatel3721@gmail.com</p></span>
+                            <span><img src="assets/contactus/mail.png"></span>
+                            <span><p>shreecottages57@gmail.com</p></span>
                         </li>
                         <li>
-                            <span><img src="../../assets/contactus/call.png"></span>
+                            <span><img src="assets/contactus/call.png"></span>
                             <span> <p>9427424157</p></span>
                         </li>
                     </ul>
@@ -116,9 +116,9 @@ if(isset($_POST['send'])){
     <script>if ( window.history.replaceState ) {
     window.history.replaceState( null, null, window.location.href );
     }</script>
-<script src="../../assets/js/jquery.min.js"></script>
-<script src="../../assets/js/slick.min.js"></script> 
-<script src="../../assets/js/j3.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/slick.min.js"></script> 
+<script src="assets/js/j3.js"></script>
 </body>
 
 </html>

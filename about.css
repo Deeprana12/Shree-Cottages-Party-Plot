@@ -1,4 +1,4 @@
-@import url(../section/header+footer.css);
+@import url(header+footer.css);
 
 /*about*/
 /* .mi{  
@@ -46,7 +46,7 @@
   content: "";
   top: 0;
   left: 0;
-  background: url(../../assets/images/about_2.jpg) no-repeat; 
+  background: url(assets/images/about_2.jpg) no-repeat; 
   z-index: -1;
   background-size: cover;  
   opacity: 0.5;  

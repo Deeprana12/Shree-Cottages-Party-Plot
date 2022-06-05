@@ -6,10 +6,10 @@
                 <h4>Quick links</h4>
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="../about/index.php">About Us</a></li>
-                    <li><a href="../roomservice/index.php">Services</a></li>
-                    <li><a href="../images/index.php">Image Gallery</a></li>
-                    <li><a href="../videos/index.php">Video Gallery</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="services.php">Services</a></li>
+                    <li><a href="images.php">Image Gallery</a></li>
+                    <li><a href="video.php">Video Gallery</a></li>
                 </ul>
             </div>
             <div class="footer-col col-lg-4">
@@ -44,7 +44,7 @@
                   color: #ffffff;
                   text-decoration: none;
                   font-weight: 300;
-                  color: #bbbbbb;display: inline;margin-left:0.8rem">Phone No. :<br>&nbsp;&nbsp;(M)+91-9427424157</p>
+                  color: #bbbbbb;display: inline;margin-left:0.8rem">Phone No. :<br>&nbsp;&nbsp;(M) +91-9427424157</p>
                     </li>
                     <li>
                         <p style="font-size: 16px;
@@ -52,7 +52,7 @@
                   color: #ffffff;
                   text-decoration: none;
                   font-weight: 300;
-                  color: #bbbbbb;display: inline;margin-left:0.8rem">(O) +91-2877-299027 /
+                  color: #bbbbbb;display: inline;margin-left:0.8rem">(O) +91-2877-299027
                             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
                         </p>
                     </li>
@@ -83,9 +83,9 @@
 </footer>
 
 
-<script src="../../assets/js/jquery.min.js"></script>
-<script src="../../assets/js/slick.min.js"></script>
-<script src="../../assets/js/j3.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/j3.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
 AOS.init({
