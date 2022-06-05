@@ -1,4 +1,4 @@
-@import url(../section/header+footer.css);
+@import url(header+footer.css);
 
 *{
    margin: 0;
@@ -51,7 +51,7 @@
     height: 100%;
     opacity: 0.5;
     z-index: -1;
-    background: url(../../assets/images/CU2.jpg);    
+    background: url(assets/images/CU2.jpg);    
     justify-content: center;
 }
 .container
@@ -84,7 +84,7 @@
     top: 0;
     left: 0;
     position: absolute;    
-    background: url(../../assets/images/cu1.jpg);    
+    background: url(assets/images/cu1.jpg);    
     background-attachment: scroll;
     opacity: 0.5;
     background-size: cover;

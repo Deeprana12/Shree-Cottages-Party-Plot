@@ -11,7 +11,7 @@
             <div class="banner">
                 <a href="index.php">
                     <img style="display: inline; margin-top: -5rem; margin-left: -1rem;"
-                        src="../../assets/images/logo.png" alt="logo" />
+                        src="assets/images/logo.png" alt="logo" />
                     <h4 style="display: inline;  margin-left: 2rem"> Shree Cottages & Party Plot</h4>
                 </a>
             </div>
@@ -21,22 +21,22 @@
     <section class="sidebar">
         <ul class="menu">
             <li class="menu-item">
-                <a href="../main/index.php" class="menu-link" data-content="Home"> Home<span class="sr-only"></span>
+                <a href="index.php" class="menu-link" data-content="Home"> Home<span class="sr-only"></span>
                 </a>
             </li>
             <li class="menu-item">
-                <a href="../about/index.php" class="menu-link" data-content="About Us"> About Us </a>
+                <a href="about.php" class="menu-link" data-content="About Us"> About Us </a>
             </li>
             <li class="menu-item dropdown-hover">
                 <a href="#" class="menu-link" data-content="About Us"> Gallery <i class="fas fa-chevron-down arrow">
                     </i></a>
                 <ul class="nav-dropdown">
                     <li class="nav-dropdown-item">
-                        <a href="../images/index.php" class="nav-dropdown-link1">Image gallery</a>
+                        <a href="images.php" class="nav-dropdown-link1">Image gallery</a>
                     </li>
                     <hr>
                     <li class="nav-dropdown-item">
-                        <a href="../videos/index.php" class="nav-dropdown-link1">video gallery</a>
+                        <a href="video.php" class="nav-dropdown-link1">video gallery</a>
                     </li>
                 </ul>
             </li>
@@ -53,10 +53,10 @@
                 </ul>
             </li> -->
             <li class="menu-item">
-                <a href="../roomservice/index.php" class="menu-link" data-content="Room service"> Services </a>
+                <a href="services.php" class="menu-link" data-content="Room service"> Services </a>
             </li>
             <li class="menu-item">
-                <a href="../contact/index.php" class="menu-link" data-content="Contact Us"> Contact Us </a>
+                <a href="contact.php" class="menu-link" data-content="Contact Us"> Contact Us </a>
             </li>
         </ul>
         <div class="social-media">

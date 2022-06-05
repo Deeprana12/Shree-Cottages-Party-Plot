@@ -1,5 +1,5 @@
 <?php
-include('../../config/config.php');
+include('config/config.php');
 $sql = "SELECT * FROM tbl_shreeimages";
 $res = mysqli_query($conn,$sql);
 ?>
@@ -26,15 +26,15 @@ $res = mysqli_query($conn,$sql);
 
     
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="images.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Mulish:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
-    <?php include('../section/includes.php'); ?>
+    <?php include('includes.php'); ?>
 </head>
 
 <body>
 
-    <?php include('../section/header.php');?>
+    <?php include('header.php');?>
     </div>
     <!-- Gallery section -->
     <div class="gallery">
@@ -53,7 +53,7 @@ $res = mysqli_query($conn,$sql);
         </div>
     </div>
     <!-- ------------ -->
-    <?php include('../section/footer.php');?>
+    <?php include('footer.php');?>
 </body>
 
 </html>

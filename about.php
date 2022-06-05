@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('../../config/config.php');
+include('config/config.php');
 error_reporting(0);
 ?>
 
@@ -14,7 +14,7 @@ error_reporting(0);
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -33,13 +33,13 @@ error_reporting(0);
 
     <!-- Glidejs StyleSheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" />
-    <?php include('../section/includes.php'); ?>
+    <?php include('includes.php'); ?>
     <title>shree cottages | Page details</title>
 </head>
 
 <body>
 
-    <?php include('../section/header.php');?>
+    <?php include('header.php');?>
 
     <!-- Meta Section -->
 
@@ -89,7 +89,7 @@ error_reporting(0);
         </div>
 
     </section>
-    <?php include('../section/footer.php');?>
+    <?php include('footer.php');?>
 
 </body>
 

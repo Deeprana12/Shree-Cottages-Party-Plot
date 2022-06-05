@@ -1,4 +1,4 @@
-@import url(../section/header+footer.css);  
+@import url(header+footer.css);  
 
   .services{
     display: flex;
@@ -20,7 +20,7 @@
     content: "";
     top: 0;
     left: 0;
-    background: url(../../assets/images/houses.jpg) no-repeat;
+    background: url(assets/images/houses.jpg) no-repeat;
     z-index: -1;
     background-size: cover;  
     opacity: 0.2; 

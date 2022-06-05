@@ -1,8 +1,8 @@
 <?php
-include('../../config/config.php');
+include('config/config.php');
 $sql = "SELECT * FROM tbl_shreeimages";
 $res = mysqli_query($conn,$sql);
-?><?php include('../../config/config.php'); ?>
+?><?php include('config/config.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,11 +26,11 @@ $res = mysqli_query($conn,$sql);
     <!-- <link rel="stylesheet" href="response.css" media="screen and (max-width:1170px)"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Mulish:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <?php include('../section/includes.php'); ?>
+    <link rel="stylesheet" href="services.css">
+    <?php include('includes.php'); ?>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
-<?php include('../section/header.php');?>
+<?php include('header.php');?>
 <body>
 
     <main>
@@ -94,9 +94,9 @@ $res = mysqli_query($conn,$sql);
 
     </main>
 
-    <script src="../../assets/js/jquery.min.js"></script>
-    <script src="../../assets/js/slick.min.js"></script>
-    <script src="../../assets/js/j3.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/j3.js"></script>
 </body>
-<?php include('../section/footer.php');?>
+<?php include('footer.php');?>
 </html>
